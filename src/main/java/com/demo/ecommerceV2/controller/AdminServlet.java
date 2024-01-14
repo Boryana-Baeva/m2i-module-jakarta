@@ -30,7 +30,6 @@ public class AdminServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Stock stock = Stock.getStock();
         String nom = request.getParameter("nom");
-        //String categorie = request.getParameter("categorie");
         String prixString = request.getParameter("prix");
 
         int categorieId = Integer.parseInt(request.getParameter("categories"));
